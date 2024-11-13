@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name = "description" content = "Gierka w karty"/>
+	<meta name = "keywords" content = "gra, karty, poker"/>
+	<meta http-equiv="X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	
+	<title>Salem</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+	<div class="descriptionTitle">
+		<div class="title">
+			Zasady
+		</div>
+		Terminologia:
+		<div class="description">
+			Karty grające - Wszystkie karty które gracze mają w rękach.<br>
+			Gracz obstawiający - Ostatni gracz który podał układ.<br>
+			Układ wyższy - układ który jest dalej w hierarchii.<br>
+			Układ niższy - układ który jest wcześniej w hierarchii.<br>
+			Znak - jeden z: trefl ♣, karo ♦, kier ♥, pik ♠.<br>
+			Ranga - jedna z: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A.<br>
+			Karta parzysta - jedna z: 2, 4, 6, 8, 10.<br>
+			Karta nieparzysta - jedna z: 3, 5, 7, 9.<br>
+			Figura - jedna z: J, Q, K.<br>
+			Para - 2 karty tej samej rangi.<br>
+			Trójka - 3 karty tej samej rangi.<br>
+			Kareta - 4 karty tej samej rangi.<br>
+			Full - para i trójka.<br>
+			Mocny Full - trójka i kareta.<br>
+			Strit - kolejne karty względem rangi.<br>
+			Poker - strit w jednym kolorze.<br>
+			Szlemik - Poker od 2 do A.<br>
+			Szlem - dwa szlemiki.<br>
+			??? - trzy szlemiki.
+		</div>
+		Cel gry:
+		<div class="description">
+			Celem gry jest pozostanie ostatnim graczem. Gracz odpada gdy weźmie daną liczbę żetonów:<br>
+			4 grających: 5 żetonów<br>
+			3 grających: 7 żetonów<br>
+			2 grających: 9 żetonów
+		</div>
+		Początek gry:
+		<div class="description">
+			Gra rozpoczyna się od rozdania każdemu graczowi 2 kart i 1 żetonu. Gracz rozpoczynający wybierany jest losowo.
+		</div>
+		Przebieg gry:
+		<div class="description">
+			Gracz rozpoczynający podaje ustawienie które jest w kartach grających, stając się graczem obstawiającym. Każdy kolejny gracz wykonuje jedną z 3 rzeczy:<br>
+			- Podbicie<br>
+			- Sprawdzenie<br>
+			- Przeczekanie
+		</div>
+		Podbicie:
+		<div class="description">
+			Podbicie polega na podaniu wyższego układu niż obstawiający gracz.
+		</div>
+		Sprawdzenie:
+		<div class="description">
+			Sprawdzenie polega na pokazaniu wszystkich kart grających. Jeżeli układ, który podał gracz obstawiający, wystąpił, rozdanie rozpoczyna się od nowa, ale gracz, który sprawdził, ma 1 żeton więcej. Jeżeli ustawienie nie wystąpiło, gracz obstawiający ma 1 żeton więcej.
+		</div>
+		Przeczekanie:
+		<div class="description">
+			Przeczekanie może wystąpić tylko gdy gracz ma na ręku jokera. Gracz może go wyrzucić, co powoduje ominięcie jego kolejki. Kolejny gracz podczas sprawdzania lub podbijania będzie robił to względem gracza obstawiającego.
+		</div>
+		Blef:
+		<div class="description">
+			Blef to sytuacja w której gracz obstawiający podaje ustawienie niezgodne z kartami które ma na ręku. Przykładowo gracz rozpoczynający, mając w ręku dziewiątkę i damę, może obstawić najwyższą kartę króla, przez co zmyli innych graczy, którzy będą myśleli że gracz obstawiający ma w ręku króla. Osoba która będzie miała króla na ręku może obstawić parę króli i gracz blefujący będzie mógł ją sprawdzić.
+		</div>
+		Układy:
+		<div class="description">
+			W grze występują poniższe układy, ułożone w kolejności od najniższego do najwyższego:<br>
+			- Najwyższa karta (wymaga podania rangi)<br>
+			- Para (wymaga podania rangi)<br>
+			- 2 Pary (wymaga podania rang)<br>
+			- Kolor 5 (wymaga podania koloru)<br>
+			- 5 Parzystych<br>
+			- 3 Figury<br>
+			- 5 Nieparzystych<br>
+			- 3 Pary (wymaga podania rang)<br>
+			- Trójka (wymaga podania rangi)<br>
+			- Full (wymaga podania rang)<br>
+			- Strit 5 (wymaga podania najniższej rangi)<br>
+			- Kolor 7 (wymaga podania koloru)<br>
+			- 2 Trójki (wymaga podania rang)<br>
+			- Strit 8 (wymaga podania najniższej karty)<br>
+			- 3 Trójki (wymaga podania rang)<br>
+			- 10 Parzystych<br>
+			- 8 Nieparzystych<br>
+			- 6 Figur<br>
+			- Kareta (wymaga podania rangi)<br>
+			- Mocny Full (wymaga podania rang)<br>
+			- 12 Nieparzystych<br>
+			- Strit 13<br>
+			- Kolor 10 (wymaga podania koloru)<br>
+			- Poker 5 (wymaga podania koloru i najniższej karty)<br>
+			- 2 Karety (wymaga podania rang)<br>
+			- 10 Figur<br>
+			- 15 Parzystych<br>
+			- Poker 9 (wymaga podania koloru i najniższej karty)<br>
+			- 3 Karety (wymaga podaniu rang)<br>
+			- Szlemik (wymaga podania koloru)<br>
+			- 16 Nieparzystych
+			- 20 Parzystych
+			- Szlem (wymaga podania kolorów)<br>
+			- Salem (wymaga podania kolorów)<br>
+			Wyższe ustawienie występuję gdy gracz poda to samo ustawienie ale, wyższą rangę lub wyższy kolor. Hierarchia rosnąca kolorów to: trefl ♣, karo ♦, kier ♥ pik ♠. Wyższość układu determinuje najwyższa karta, na przykład mając 3 pary J,Q,K wyższym ustawieniem jest 2,3,A. W Fullu i Mocnym Fullu ważniejsza jest dłuższa ranga, na przykład 3 damy i dwie 2 są wyżej niż 3 walety i dwa asy.  
+		</div>
+		Ranking:
+		<div class="description">
+			Gracz który wygra partię dostaję punkty (§). Muszę wymyślić jakiś uczciwy system :/
+		</div>
+		<a href="index.html">
+			<div class="return">
+				<br>Powrót<br><br>
+			</div>
+		</a>
+	</div>
+</body>
+
+
+
+</html>  
