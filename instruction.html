@@ -9,7 +9,7 @@
 	<meta name = "keywords" content = "gra, karty, poker"/>
 	<meta http-equiv="X-UA-Compatible" content = "IE=edge,chrome=1"/>
 	
-	<title>Salem</title>
+	<title>Salem - Instrukcja</title>
 
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -59,7 +59,7 @@
 		</div>
 		Przebieg gry:
 		<div class="description">
-			Gracz rozpoczynający podaje ustawienie które jest w kartach grających, stając się graczem obstawiającym. Następnie, ma możliwość wymiany żetonu na 2 karty. Każdy kolejny gracz wykonuje jedną z 3 rzeczy: podbicie, prawdzenie, przeczekanie.
+			Gracz rozpoczynający obstawia ustawienie które może znajdować się w kartach grających, stając się graczem obstawiającym. Następnie, ma możliwość wymiany żetonu na 2 karty. Każdy kolejny gracz wykonuje jedną z 3 rzeczy: podbicie, sprawdzenie, przeczekanie.
 		</div>
 		Podbicie:
 		<div class="description">
@@ -119,11 +119,11 @@
 		Ranking:
 		<div class="description">
 			Wygrany gracz zyskuje §, a przegrani tracą §. Oznaczmy ranking gracza jako <span class="equation">x</span>. Aby obliczyć nowy ranking gracza <span class="equation">x'</span>, należy obliczyć średni ranking pozostałych graczy <span class="equation"><span class="overline">x</span></span> i podstawić odpowiednio do równania:<br>
-			Dla gracza wygranego: <span class="equation">x'=x+floor(90/(1+exp((x-<span class="overline">x</span>)/20)))</span>.<br>
-			Dla gracza przegranego: <span class="equation">x'=x-floor(30/(1+exp((<span class="overline">x</span>-x)/20)))</span>.<br>
-			Poniższy wykres pokazuję zmianę rankingu (oś pionowa) względem różnicy rankingu początkowego i średniej pozostałych graczy (oś pozioma)<br><br>
+			Dla gracza wygranego: <span class="equation">x'=x+floor(105/(1+exp((x-<span class="overline">x</span>)/66)))</span>.<br>
+			Dla gracza przegranego: <span class="equation">x'=x-floor(35/(1+exp((<span class="overline">x</span>-x)/66)))</span>.<br>
+			Poniższy wykres pokazuję zmianę rankingu (oś pionowa) względem różnicy rankingu początkowego i średniej pozostałych graczy (oś pozioma).<br><br>
 			<img src="img/chart.png"></img><br>
-			Przykładowo, gracze mieli ranking odpowiednio: 1097§, 1116§, 970§ i 996§, i wygrał pierwszy gracz. Nowe rankingi to odpowiednio: 1099§, 1087§, 970§, 995§<br>
+			Przykładowo, gracze mieli ranking odpowiednio: 1097§, 1176§, 991§ i 1115§, i wygrał pierwszy gracz. Nowe rankingi to odpowiednio: 1148§, 1147§, 988§, 1094§<br>
 		</div>
 		<a href="index.html" class="return">
 			Powrót
