@@ -21,6 +21,16 @@ body, html
     background-color: #0000A0;
 	
 	font-size: 60px;
+	
+	text-shadow:
+	0.8px 0.8px 0 #707070,
+	-0.8px 0.8px 0 #707070,
+	-0.8px -0.8px 0 #707070,
+	0.8px -0.8px 0 #707070,
+	0.8px 0 0 #707070,
+	-0.8px 0 0 #707070,
+	0 -0.8px 0 #707070,
+	0 0.8px 0 #707070;
 }
 
 .gameOption
